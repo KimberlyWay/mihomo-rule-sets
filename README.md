@@ -1,8 +1,8 @@
 # 🌌 Ultimate Mihomo Routing & Rulesets
 
-![Mihomo](https://img.shields.io/badge/Mihomo-Optimized-550AEC?style=for-the-badge&logo=c)
-![Remnawave](https://img.shields.io/badge/Remnawave-Ready-550AEC?style=for-the-badge)
-![Routing](https://img.shields.io/badge/Smart_Routing-Enabled-550AEC?style=for-the-badge)
+<a href="https://github.com/MetaCubeX/mihomo"><img src="https://img.shields.io/badge/Mihomo-Optimized-550AEC?style=for-the-badge&logo=c" alt="Mihomo"></a>
+<a href="https://github.com/remnawave/remnawave](https://github.com/remnawave/panel)"><img src="https://img.shields.io/badge/Remnawave-Ready-550AEC?style=for-the-badge" alt="Remnawave"></a>
+<a href="[https://wiki.metacubex.one/ru/config/routing/](https://wiki.metacubex.one/ru"><img src="https://img.shields.io/badge/Smart_Routing-Enabled-550AEC?style=for-the-badge" alt="Routing"></a>
 
 В этом репозитории хранится оптимизированный шаблон конфигурации для Mihomo (Clash). Сами списки и базы маршрутизации загружаются напрямую от оригинального автора, а этот конфиг грамотно объединяет их для обеспечения максимальной скорости, стабильного обхода блокировок и умного выбора серверов.
 
