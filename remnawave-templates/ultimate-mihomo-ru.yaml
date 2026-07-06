@@ -177,36 +177,36 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/remnawave/templates@main/icons/Blocked.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
-      - 🇷🇺 Без VPN
 
   - name: ▶️ YouTube
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🇷🇺 Без VPN
 
   - name: 👾 Twitch
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitch.png
     type: select
     proxies:
       - 🇷🇺 Без VPN
+      - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🧠 Умный выбор
 
   - name: 💬 Discord
     icon: https://cdn.jsdelivr.net/gh/remnawave/templates@main/icons/Discord.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🇷🇺 Без VPN
 
   - name: 🎙️ TeamSpeak
     icon: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/teamspeak.png
@@ -221,37 +221,37 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🇷🇺 Без VPN
 
   - name: ➤ Telegram
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🇷🇺 Без VPN
 
   - name: ☁️ Cloudflare
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
-      - 🇷🇺 Без VPN
       - 🚫 Недоступные сайты
 
   - name: 🤖 Нейросети
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
     type: select
     proxies:
+      - 🇷🇺 Без VPN
       - 🧠 Умный выбор
       - 🎲 Любой доступный сервер
       - 🚫 Недоступные сайты
-      - 🇷🇺 Без VPN
       
   - name: 🎮 Steam
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
