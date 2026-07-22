@@ -732,11 +732,22 @@ rules:
   - PROCESS-NAME-REGEX,(?i).*nagram.*,➤ Telegram
   - PROCESS-NAME-REGEX,(?i).*nekox.*,➤ Telegram
 
-  # 🎮 Riot Games / Valorant / LoL — CDN патчей и клиента прячется за Cloudflare IP,
-  # поэтому без этого исключения весь докачиваемый трафик ловился бы правилом cloudflare-ips ниже.
-  # Логин/матчмейкинг (data.riotgames.com, *.pvp.net, clientconfig.rgp.riotgames.com) НЕ трогаем —
-  # они по-прежнему попадут в ☁️ Cloudflare и уйдут через ВПН, т.к. сервис в РФ без него не пускает.
+  # 🎮 Riot Games / Valorant / LoL — весь трафик (включая логин, data.riotgames.com,
+  # clientconfig.rgp.riotgames.com, pvp.net, войс и патчи) идёт напрямую, без VPN.
+  # Раньше логин/матчмейкинг специально оставляли на ☁️ Cloudflare (VPN), т.к. считалось,
+  # что без этого РФ не пускает — по факту это единственное, что стоит проверить в первую
+  # очередь, если вдруг перестанет пускать в клиент: верните ниже DOMAIN-SUFFIX,riotgames.com
+  # и DOMAIN-SUFFIX,pvp.net в ☁️ Cloudflare.
+  - DOMAIN-SUFFIX,riotgames.com,🇷🇺 Без VPN
   - DOMAIN-SUFFIX,riotcdn.net,🇷🇺 Без VPN
+  - DOMAIN-SUFFIX,pvp.net,🇷🇺 Без VPN
+  - DOMAIN-SUFFIX,vivox.com,🇷🇺 Без VPN
+  - DOMAIN-SUFFIX,valorant-api.com,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i).*riotclientservices.*,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i).*valorant.*,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i).*leagueclient.*,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i).*riotgames.*,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i)^vgc\.exe$,🇷🇺 Без VPN
 
   # ☁️ Cloudflare
   - RULE-SET,cloudflare-ips,☁️ Cloudflare
