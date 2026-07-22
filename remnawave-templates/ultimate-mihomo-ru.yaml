@@ -743,7 +743,7 @@ rules:
   - DOMAIN-SUFFIX,pvp.net,🇷🇺 Без VPN
   - DOMAIN-SUFFIX,vivox.com,🇷🇺 Без VPN
   - DOMAIN-SUFFIX,valorant-api.com,🇷🇺 Без VPN
-  - PROCESS-NAME-REGEX,(?i).*riotclientservices.*,🇷🇺 Без VPN
+  - PROCESS-NAME-REGEX,(?i).*riot.*client.*,🇷🇺 Без VPN
   - PROCESS-NAME-REGEX,(?i).*valorant.*,🇷🇺 Без VPN
   - PROCESS-NAME-REGEX,(?i).*leagueclient.*,🇷🇺 Без VPN
   - PROCESS-NAME-REGEX,(?i).*riotgames.*,🇷🇺 Без VPN
