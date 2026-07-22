@@ -300,6 +300,7 @@ proxy-groups:
   - name: 🧠 Умный выбор
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: smart
+    exclude-filter: "Россия|Канада|Япония"
     uselightgbm: true
     remnawave:
       include-proxies: true
@@ -310,6 +311,7 @@ proxy-groups:
 
   - name: 🎲 Любой доступный сервер
     type: fallback
+    exclude-filter: "Россия|Канада|Япония"
     remnawave:
       include-proxies: true
       shuffle-proxies-order: true
@@ -737,6 +739,12 @@ rules:
   - PROCESS-NAME-REGEX,(?i).*nekogram.*,➤ Telegram
   - PROCESS-NAME-REGEX,(?i).*nagram.*,➤ Telegram
   - PROCESS-NAME-REGEX,(?i).*nekox.*,➤ Telegram
+
+  # 🎮 Riot Games / Valorant / LoL — CDN патчей и клиента прячется за Cloudflare IP,
+  # поэтому без этого исключения весь докачиваемый трафик ловился бы правилом cloudflare-ips ниже.
+  # Логин/матчмейкинг (data.riotgames.com, *.pvp.net, clientconfig.rgp.riotgames.com) НЕ трогаем —
+  # они по-прежнему попадут в ☁️ Cloudflare и уйдут через ВПН, т.к. сервис в РФ без него не пускает.
+  - DOMAIN-SUFFIX,riotcdn.net,🇷🇺 Без VPN
 
   # ☁️ Cloudflare
   - RULE-SET,cloudflare-ips,☁️ Cloudflare
