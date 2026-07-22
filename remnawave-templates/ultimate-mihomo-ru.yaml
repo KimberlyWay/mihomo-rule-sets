@@ -155,7 +155,7 @@ dns:
     rule-set:cloudflare-domains:
       - https://8.8.8.8/dns-query#☁️ Cloudflare
       - https://94.140.14.14/dns-query#☁️ Cloudflare
-    rule-set:ai,google-deepmind,ai-inline:
+    rule-set:ai,ai-inline:
       - https://8.8.8.8/dns-query#🤖 Нейросети
       - https://94.140.14.14/dns-query#🤖 Нейросети
     rule-set:steam:
@@ -516,14 +516,6 @@ rule-providers:
     format: mrs
     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs
     path: ./rule-sets/ai.mrs
-  google-deepmind:
-    type: http
-    proxy: 🚫 Недоступные сайты
-    interval: 86400
-    behavior: domain
-    format: mrs
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-deepmind.mrs
-    path: ./rule-sets/google-deepmind.mrs
   steam:
     type: http
     proxy: 🚫 Недоступные сайты
@@ -750,9 +742,8 @@ rules:
   - RULE-SET,cloudflare-ips,☁️ Cloudflare
   - RULE-SET,cloudflare-domains,☁️ Cloudflare
 
-  # 🤖 Нейросети (Провайдер ai содержит ChatGPT, Claude, Midjourney, Bing и кучу других)
+  # 🤖 Нейросети (Провайдер ai содержит ChatGPT, Claude, Midjourney, Gemini/AI Studio/DeepMind, Bing и кучу других)
   - RULE-SET,ai,🤖 Нейросети
-  - RULE-SET,google-deepmind,🤖 Нейросети
   - RULE-SET,ai-inline,🤖 Нейросети
 
   # 🎮 Steam (Скачивание игр напрямую чтобы не тратить трафик, магазин/сообщество - через селектор)
