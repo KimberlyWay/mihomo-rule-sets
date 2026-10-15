@@ -300,7 +300,7 @@ proxy-groups:
   - name: 🧠 Умный выбор
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: smart
-    exclude-filter: "Россия|Канада|Япония"
+    exclude-filter: "Codex|Канада|Япония"
     uselightgbm: true
     remnawave:
       include-proxies: true
@@ -311,7 +311,7 @@ proxy-groups:
 
   - name: 🎲 Любой доступный сервер
     type: fallback
-    exclude-filter: "Россия|Канада|Япония"
+    exclude-filter: "Codex|Канада|Япония"
     remnawave:
       include-proxies: true
       shuffle-proxies-order: true
@@ -738,13 +738,13 @@ rules:
   # они по-прежнему попадут в ☁️ Cloudflare и уйдут через ВПН, т.к. сервис в РФ без него не пускает.
   - DOMAIN-SUFFIX,riotcdn.net,🇷🇺 Без VPN
 
+  # 🤖 Нейросети (Провайдер ai содержит ChatGPT, Claude, Midjourney, Gemini/AI Studio/DeepMind, Bing и кучу других)
+  - RULE-SET,ai,🤖 Нейросети
+  - RULE-SET,ai-inline,🤖 Нейросети 
+
   # ☁️ Cloudflare
   - RULE-SET,cloudflare-ips,☁️ Cloudflare
   - RULE-SET,cloudflare-domains,☁️ Cloudflare
-
-  # 🤖 Нейросети (Провайдер ai содержит ChatGPT, Claude, Midjourney, Gemini/AI Studio/DeepMind, Bing и кучу других)
-  - RULE-SET,ai,🤖 Нейросети
-  - RULE-SET,ai-inline,🤖 Нейросети
 
   # 🎮 Steam (Скачивание игр напрямую чтобы не тратить трафик, магазин/сообщество - через селектор)
   - DOMAIN-KEYWORD,steamcontent,🇷🇺 Без VPN
